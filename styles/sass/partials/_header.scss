@@ -1,0 +1,22 @@
+header {
+  padding-top: 150px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  min-width: 50%;
+}
+
+.header-img {
+  min-width: 40%;
+}
+
+.header-content p {
+  font-size: 1.25rem;
+  width: 80%;
+  padding-bottom: 40px;
+}

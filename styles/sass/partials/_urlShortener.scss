@@ -1,0 +1,75 @@
+.url-shortener .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: $dark-violet;
+  background-image: url(../assets/bg-shorten-desktop.svg);
+  background-size: cover;
+  height: 8rem;
+  transform: translate(0, 50%);
+}
+
+.url-shortener form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px 25px 0px;
+}
+
+
+// default styling for input form
+.url-input-style {
+  font: $mainFont;
+  color: $very-dark-blue;
+  width:100%;
+  border-radius: 10px;
+  padding: 15px 15px 15px 30px;
+}
+
+// error styling for input form
+.url-input-error-style {
+  font: $mainFont;
+  color: $red;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 15px 15px 30px;
+  border: 2px solid $red;
+}
+
+.url-shorten-style {
+  font: $mainFont;
+  font-weight: 700;
+  color: white;
+  background-color: $cyan;
+  border: none;
+  width: 18%;
+  height: 43%;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 50px 60px 0px 0px;
+}
+
+.url-shorten-style:hover{
+  background-color: $cyan;
+  box-shadow:inset 0 0 0 100px rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+#error-msg {
+  visibility: hidden;
+  color: $red;
+
+  p {
+    padding-top: 4px;
+    font-style: italic;
+    color: $red;
+    font-size:0.8rem;
+  }
+}
